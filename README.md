@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Faojul Azim
 - 👀 I’m interested in Learning New Things and Acquiring New Skills
 - 🌱 I’m currently learning Javascript
-- 💞️ I’m looking to collaborate on ...
+- 💞️ I’m looking to collaborate on...
 - 📫 How to reach me faojulazim3@gmail.com
 
 <!---
