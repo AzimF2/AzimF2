@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --font-500: 500;
+  --font-700: 700;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-fraunces: "Fraunces", serif;
+}
+img {
+  display: block;
+}
+p {
+  font-size: 14px;
+}
+body {
+  background: var(--Cream);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.left-container img {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.right-container {
+  padding: 30px 30px;
+  background: var(--White);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+p:first-child {
+  font-size: 13px;
+  font-family: var(--font-montserrat);
+  font-weight: var(--font-500);
+  letter-spacing: 4px;
+  color: var(--Dark-grayish-blue);
+}
+h1 {
+  font-size: 30px;
+  font-family: var(--font-fraunces);
+}
+.title-h1 {
+  margin-top: 20px;
+  width: 220px;
+}
+.title-p {
+  font-family: var(--font-montserrat);
+  font-weight: var(--font-500);
+  color: var(--Dark-grayish-blue);
+  margin: 20px 0;
+  line-height: 22px;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+.price h1 {
+  color: var(--Dark-cyan);
+  margin-right: 10px;
+}
+.price h5 {
+  font-family: var(--font-montserrat);
+  font-weight: var(--font-500);
+  color: var(--Dark-grayish-blue);
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: var(--font-montserrat);
+  font-weight: var(--font-500);
+  padding: 1rem 0;
+  width: 100%;
+  background: var(--Dark-cyan);
+  border: none;
+  border-radius: 8px;
+  color: var(--White);
+}
+button img {
+  margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    height: auto;
+    margin-top: 30px;
+    padding: 2rem;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .left-container img {
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+  }
+  .right-container {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  button {
+    margin-bottom: 10px;
+  }
+}
