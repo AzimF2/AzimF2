@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+p {
+  font-size: 18px;
+  font-weight: var(--font-300);
+  color: var(--Soft-blue);
+}
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --font-300: 300;
+  --font-400: 400;
+  --font-600: 600;
+}
+body {
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--Very-dark-blue-main-BG);
+}
+.container {
+  width: 340px;
+  padding: 20px;
+  border-radius: 12px;
+  background: var(--Very-dark-blue-card-BG);
+  color: white;
+}
+.Equilibrium {
+  border-radius: 8px;
+}
+.titles h3 {
+  margin: 20px 0;
+  font-weight: var(--font-400);
+}
+.balance-and-time {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.img-balance {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+}
+.img-balance h4 {
+  font-weight: var(--font-400);
+  color: var(--Cyan);
+}
+.time {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+}
+.time h4 {
+  font-weight: var(--font-400);
+  color: var(--Soft-blue);
+}
+.profile-credit {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid;
+  border-color: var(--Very-dark-blue-line);
+  padding: 15px 0;
+  margin-top: 20px;
+}
+.profile-credit img {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+.profile-credit h4 {
+  font-weight: var(--font-400);
+}
+.profile-credit h4 span {
+  color: var(--Soft-blue);
+}
