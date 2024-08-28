@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Dark-Blue: hsl(214, 22%, 19%);
+  --Dark-Blue-for-container: hsl(217, 19%, 14%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --font-default: 15px;
+  --font-400: 400;
+  --font-700: 700;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background: var(--Very-Dark-Blue);
+  color: var(--Light-Grey);
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+p {
+  font-size: var(--font-default);
+  font-weight: var(--font-400);
+  line-height: 21px;
+}
+.container {
+  background: var(--Dark-Blue-for-container);
+  min-width: 200px;
+  max-width: 400px;
+  padding: 25px 30px 0 30px;
+  border-radius: 25px;
+}
+.star img {
+  background: var(--Dark-Blue);
+  padding: 15px 15px;
+  border-radius: 100%;
+  margin-bottom: 25px;
+}
+h1 {
+  font-weight: var(--font-700);
+  color: var(--White);
+}
+.text-container p {
+  margin-block: 15px 25px;
+}
+.numbers {
+  display: flex;
+  gap: 0 15px;
+  font-family: "Overpass", sans-serif;
+  justify-content: space-around;
+}
+.numbers button {
+  border: none;
+  background: var(--Dark-Blue);
+  color: var(--Light-Grey);
+  font-weight: 700;
+  padding-block: 4px 2px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "overpass";
+}
+.buttons {
+  border: none;
+}
+button:hover {
+  color: var(--Very-Dark-Blue);
+  background: var(--White);
+}
+#smtbtn {
+  border: none;
+  background: var(--Orange);
+  width: 100%;
+  padding-block: 7px;
+  font-weight: var(--font-700);
+  font-size: 17px;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  margin: 30px 0;
+}
+#smtbtn:hover {
+  color: var(--Very-Dark-Blue);
+  background: var(--White);
+}
+.error {
+  animation-name: error;
+  animation-duration: 1.8s;
+}
+@keyframes error {
+  0% {
+    background: white;
+  }
+  25% {
+    background: red;
+  }
+  50% {
+    background: white;
+  }
+  75% {
+    background: red;
+  }
+  100% {
+    background: var(--Orange);
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 25px 23px 0 23px;
+  }
+  .numbers button {
+    border: none;
+    background: var(--Dark-Blue);
+    color: var(--Light-Grey);
+    font-weight: 700;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button:hover {
+    color: var(--Very-Dark-Blue);
+    background: var(--White);
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    padding: 0 20px;
+  }
+  .container {
+    padding: 25px 21px 0 21px;
+  }
+  .numbers button {
+    border: none;
+    background: var(--Dark-Blue);
+    color: var(--Light-Grey);
+    font-weight: 700;
+    padding-block: 4px 3px;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button:hover {
+    color: var(--Very-Dark-Blue);
+    background: var(--White);
+  }
+}
+
+.container-2 {
+  background: var(--Dark-Blue-for-container);
+  min-width: 200px;
+  max-width: 400px;
+  padding: 35px 30px;
+  border-radius: 25px;
+}
+.thanks-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.selection {
+  text-align: center;
+  color: var(--Orange);
+  margin: auto;
+  margin-block: 30px;
+}
+.selection p {
+  width: 200px;
+  margin: auto;
+  padding-block: 6px 4px;
+  background: var(--Dark-Blue);
+  border-radius: 50px;
+}
+.text-container-2 {
+  text-align: center;
+}
+.text-container-2 p {
+  margin-block: 7px;
+}
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 25px 23px 0 23px;
+  }
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: flex;
+}
+.checked {
+  background-color: var(--Orange) !important;
+  color: var(--Dark-Blue) !important;
+}
